@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Upload Profile Picture with JWT</title>
+</head>
+
+<body>
+    <h2>Upload Profile Picture</h2>
+
+    <form id="upload-form" enctype="multipart/form-data">
+        <label for="file">Choose an image:</label>
+        <input type="file" name="file" id="file" accept="image/png, image/jpeg, image/jpg, image/gif" required>
+        <br><br>
+
+        <label for="token">Enter JWT Token:</label>
+        <input type="text" id="token" placeholder="Paste your JWT here" required style="width: 300px;">
+        <br><br>
+
+        <button type="submit">Upload</button>
+    </form>
+
+    <br>
+    <div id="result"></div>
+
+    <script>
+        document.getElementById("upload-form").addEventListener("submit", async function (event) {
+            event.preventDefault(); // Prevent full-page reload
+
+            const form = document.getElementById("upload-form");
+            const formData = new FormData(form);
+            const token = document.getElementById("token").value;
+
+            let response = await fetch("http://127.0.0.1:50009/api/users/profile_pic", {
+                method: "POST",
+                headers: {
+                    Authorization: "Bearer " + token
+                },
+                body: formData
+            });
+
+            const result = await response.json();
+            document.getElementById("result").innerHTML = JSON.stringify(result, null, 2);
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,19 @@
+# python virtual environment
+venv/
+
+# Node modules
+node_modules/
+
+# npm lockfile
+package-lock.json
+
+# python cache
+*.pyc
+*.pyo
+__pycache__/
+
+# build folder  
+build/
+
+# env file
+.env
