@@ -1,0 +1,49 @@
+.friends-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 80vh; /* Ensure the page takes up at least 80% of the viewport height */
+  padding: 5%; /* Use percentage-based padding for responsiveness */
+  position: relative;
+}
+
+.friends-title {
+  font-size: 3.5em;
+  font-weight: bold;
+  margin-bottom: 5vh; /* Use viewport height for spacing */
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh; /* Use viewport height for spacing between buttons */
+  width: 90%; /* Make the container take up 90% of the screen width */
+  max-width: 600px; /* Limit the maximum width for larger screens */
+  align-items: center; /* Center the buttons horizontally */
+}
+
+.friends-button {
+  display: inline-block; /* Ensure the button adjusts to its content */
+  height: 8vh;
+  width: 100%; /* Make the button take up the full width of the container */
+  max-width: 350px; /* Limit the maximum width for larger screens */
+  padding: 10px 20px; /* Add padding for spacing around the text */
+  background-color: #ff7590;
+  border: none; /* Remove the black border */
+  font-size: 1.5em; /* Adjust font size dynamically */
+  font-weight: bold;
+  color: white;
+  border-radius: 0.5em;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+  text-align: center; /* Center the text inside the button */
+  white-space: nowrap; /* Prevent text from wrapping */
+  overflow: hidden; /* Ensure text does not overflow */
+  box-sizing: border-box; /* Include padding and border in the button's width */
+}
+
+.friends-button:hover {
+  background-color: #eca6a6;
+}

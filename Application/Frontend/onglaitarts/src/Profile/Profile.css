@@ -1,0 +1,153 @@
+  /* Profile container setup */
+  .profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /* Center content horizontally */
+    justify-content: center;  /* Center content vertically */
+    text-align: center;
+    position: relative;
+    padding: 10px 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    height: calc(95vh - 22px); /* Adjust the height */
+  }
+  
+  /* Top-left back button */
+  .back-button {
+    position: absolute;
+    top: 2vh;
+    left: 2vw;
+    width: 8vw;
+    max-width: 60px;
+    height: auto;
+    cursor: pointer;
+  }
+  
+  /* Top-right member ID */
+  .member-id {
+    font-size: 1.2em;
+    font-weight: bold;
+    position: absolute;
+    top: 2vh;
+    right: 2vw;
+  }
+  
+  /* Profile content section */
+  .profile-content {
+    margin-top: 8vh;
+  }
+  
+  /* Profile picture */
+  .profile-picture-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .profile-picture {
+    width: 35vw;  /* Increased size */
+    max-width: 250px;  /* Set maximum size */
+    height: 35vw;  /* Increased size */
+    max-height: 250px;  /* Set maximum size */
+    border-radius: 50%;
+    border: 2px solid black;
+    margin-bottom: 2vh;
+    object-fit: cover;
+  }
+  
+  .profile-picture.editable {
+    cursor: pointer;
+  }
+  
+  /* Edit icon on profile picture */
+  .edit-icon {
+    position: absolute;
+    bottom: 30px;  /* Closer to the bottom of the profile picture */
+    right: 30px;   /* Closer to the right of the profile picture */
+    width: 10vw;
+    max-width: 40px;
+    height: auto;
+    cursor: pointer;
+  }
+  
+  /* Username style */
+  .username {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 2vh;
+  }
+  
+  .username-input {
+    font-size: 2.5em;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 2vh;
+    width: 80%;  /* Adjust the width to fit the screen */
+    max-width: 350px;  /* Set max width for better control */
+  }
+  
+  /* Buttons container */
+  .profile-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vh;
+    width: 100%;
+    max-width: 600px;  /* Increase maximum width of buttons */
+  }
+  
+  /* Profile buttons */
+  .profile-button {
+    width: 90%;  /* Make buttons longer horizontally */
+    max-width: 500px;  /* Set maximum width */
+    height: 8vh;  /* Reduced height vertically */
+    background-color: #FF7590;
+    border: none;
+    font-size: 1.5em;  /* Adjust font size to fit text on one line */
+    font-weight: bold;
+    color: white;
+    border-radius: 0.5em;
+    cursor: pointer;
+  }
+  
+  .profile-button:hover {
+    background-color: #eca6a6;
+  }
+  
+  /* Edit Profile button specific styling */
+  .edit-profile-button {
+    width: 90%;  /* Make Edit Profile button same width */
+    max-width: 500px;  /* Set maximum width */
+    height: 8vh;  /* Reduce the vertical height */
+    background-color: #FF7590;
+    border: none;
+    font-size: 1.5em;  /* Same font size */
+    font-weight: bold;
+    color: white;
+    border-radius: 0.5em;
+    cursor: pointer;
+  }
+  
+  .edit-profile-button:hover {
+    background-color: #eca6a6;
+  }
+  
+  /* Submit button specific styling */
+  .submit-button {
+    width: 80%;  /* Make Submit button same width */
+    max-width: 500px;  /* Set maximum width */
+    height: 8vh;  /* Reduce the vertical height */
+    background-color: #FF7590;
+    border: none;
+    font-size: 1.5em;  /* Same font size */
+    font-weight: bold;
+    color: white;
+    border-radius: 0.5em;
+    cursor: pointer;
+  }
+  
+  .submit-button:hover {
+    background-color: #eca6a6;
+  }
+  

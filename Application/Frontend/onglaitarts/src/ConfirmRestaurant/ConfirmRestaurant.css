@@ -1,0 +1,79 @@
+.confirm-restaurant-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 75vh;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.confirm-votes-button, .deny-votes-button {
+    background-color: #ff7590;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 15px 30px;
+    font-size: 1.5em;
+    cursor: pointer;
+    margin: 10px 0;
+    width: auto;
+    min-width: 30vh;
+}
+
+.confirm-votes-button:hover, .deny-votes-button:hover {
+    background-color: #eca6a6;
+}
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffdada;
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    z-index: 1000;
+}
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ff6b6b; /* Darker shade of red */
+    padding: 40px 60px; /* Increase padding for a larger pop-up */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2); /* Stronger shadow for emphasis */
+    text-align: center;
+    z-index: 1000;
+    color: white; /* White text for contrast */
+}
+
+.popup p {
+    font-size: 2em; /* Larger font size for the message */
+    margin-bottom: 20px;
+}
+
+.popup-close-button {
+    background-color: #ffffff; /* White button */
+    color: #ff6b6b; /* Match the pop-up background color */
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.popup-close-button:hover {
+    background-color: #ffe6e6; /* Slightly lighter shade on hover */
+}

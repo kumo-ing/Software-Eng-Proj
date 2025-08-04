@@ -1,0 +1,97 @@
+.main-style {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 70vh;
+  position: relative;
+}
+
+.back-button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.title {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 15px;
+  font-weight: bold;
+  margin: 0; /* Remove margin */
+}
+
+.wheelBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  top: 65%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: 400px;
+  > div {
+    height: 100%;
+    width: 100%;
+    max-height: unset;
+    max-width: unset;
+  }
+}
+
+.spin-button {
+  padding: 10px 20px;
+  font-size: 40px;
+  cursor: pointer;
+  background-color: #ff7590;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  position: absolute;
+  bottom: -25%;
+  width: 300px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.spin-button:hover {
+  background-color: #ff4c4c; /* Change the hover color to #ff4c4c */
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 40px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 40px;
+}
+
+.modal-button {
+  padding: 10px 20px;
+  font-size: 20px;
+  width: 100%;
+  cursor: pointer;
+  background-color: #ff7590;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  bottom: 0;
+}

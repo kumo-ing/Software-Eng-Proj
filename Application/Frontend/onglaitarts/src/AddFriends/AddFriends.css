@@ -1,0 +1,57 @@
+.add-friends-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 75vh; /* Ensure the page takes up at least 75% of the viewport height */
+    padding: 5%; /* Use percentage-based padding for responsiveness */
+    position: relative;
+}
+
+.title-add-friends {
+    font-size: 3.5em; /* Adjust font size dynamically based on the viewport width */
+    font-weight: bold;
+    margin-bottom: 5vh; /* Use viewport height for spacing */
+}
+
+.input-field {
+    width: auto; /* Adjust width based on content */
+    min-width: 200px; /* Set a minimum width for smaller screens */
+    max-width: 500px; /* Limit the maximum width for larger screens */
+    padding: 10px 15px; /* Add padding for spacing around the text */
+    font-size: 1.5em; /* Adjust font size dynamically based on the viewport width */
+    margin-bottom: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    text-align: center;
+    box-sizing: border-box; /* Include padding and border in the width */
+}
+
+.error-message {
+    color: red;
+    margin-bottom: 20px;
+    font-size: 1.2em; /* Adjust font size dynamically based on the viewport width */
+    width: auto; /* Adjust width based on content */
+    text-align: center;
+}
+
+.add-friend-button {
+    background-color: #FF7590;
+    color: white;
+    width: auto; /* Adjust width based on content */
+    height: 5vh;
+    min-width: 200px; /* Set a minimum width for smaller screens */
+    max-width: 500px; /* Limit the maximum width for larger screens */
+    padding: 10px 15px; /* Add padding for spacing around the text */
+    font-size: 1.5em;
+    border: none;
+    border-radius: 0.5em;
+    cursor: pointer;
+    text-align: center;
+    box-sizing: border-box; /* Include padding and border in the width */
+}
+
+.add-friend-button:hover {
+    background-color: #eca6a6;
+}

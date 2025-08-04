@@ -1,0 +1,56 @@
+.chatMessageList {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.chatMessage {
+    display: flex;
+    align-items: flex-start;
+    max-width: 70%;
+}
+
+.ownMessage {
+    align-self: flex-end;
+    flex-direction: row-reverse;
+    text-align: right;
+}
+
+.otherMessage {
+    align-self: flex-start;
+    flex-direction: row;
+}
+
+.chatProfilePic {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin: 0 8px;
+}
+
+.chatMessageContent {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.ownMessage .chatMessageContent {
+    background-color: #daf1ff;
+}
+
+.chatMessagesContainer {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding-right: 8px;
+    display: flex;
+    flex-direction: column;
+    max-height: 66%;
+    /* min-height: 0; 👈 important when using flex children */
+  }
+
+.chatMessageTime {
+    font-size: 0.75rem;
+    color: #999;
+}
+
+  

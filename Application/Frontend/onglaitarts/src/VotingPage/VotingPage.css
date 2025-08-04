@@ -1,0 +1,97 @@
+.voting-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    min-height: 100vh;
+    overflow-y: auto;
+  }
+  
+  .title-voting {
+    font-size: 3.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .restaurants-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    max-width: 800px;
+    max-height: 70vh;
+  }
+  
+  .restaurant-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+  
+  .restaurant-info {
+    flex: 1;
+    text-align: left;
+    font-size: 1.2em;
+  }
+  
+  .vote-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    margin-left: 20px;
+  }
+  
+  .vote-buttons button {
+    font-size: 1.2rem;
+    padding: 6px 10px;
+    cursor: pointer;
+    background: none;
+    border: none;
+  }
+  
+  .vote-buttons button.voted {
+    background-color: #d4f5d4;
+    border: 2px solid #4caf50;
+    border-radius: 5px;
+  }
+  
+  .back-button {
+    margin-top: 10%;
+  }
+  
+  .confirm-button {
+    position: fixed;
+    bottom: 4vh;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #FF7590;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 15px 30px;
+    font-size: 1.5em;
+    cursor: pointer;
+    z-index: 1100;
+  }
+  
+  .confirm-button {
+    position: fixed;
+    bottom: 4vh;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #FF7590;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 15px 30px;
+    font-size: 1.5em;
+    cursor: pointer;
+    z-index: 1100;
+  }
+  

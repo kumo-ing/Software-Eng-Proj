@@ -1,0 +1,8 @@
+.bg-col {
+  background-image: url("../resources/background.jpg"); /* Path to the background image */
+  background-size: auto; /* Ensures the image covers the entire container */
+  background-position: center; /* Centers the image */
+  background-repeat: repeat;
+  width: 100%;
+  height: calc(95vh - 22px); /* Makes the background span the full viewport height */
+}

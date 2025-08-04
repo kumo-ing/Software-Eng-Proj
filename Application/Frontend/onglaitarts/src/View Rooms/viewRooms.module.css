@@ -1,0 +1,108 @@
+.container {
+  padding: 20px;
+  position: relative;
+}
+
+.header {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.back-button {
+  cursor: pointer;
+  width: 30px; /* Adjust the size as needed */
+  height: 30px; /* Adjust the size as needed */
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  padding: 8px;
+  text-align: center;
+  font-size: 25px; /* Increase font size */
+}
+
+.table th {
+  background-color: #e9e9e9;
+}
+
+.table tr {
+  border-bottom: 1px solid #ddd;
+}
+
+.table tr:nth-child(odd) {
+  background-color: #fbcfe8da;
+}
+
+.table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.table tr:hover {
+  background-color: #ddd;
+}
+
+.circle-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle {
+  width: 10px;
+  height: 10px;
+  background-color: #000;
+  border-radius: 50%;
+  margin: 0 2px;
+  cursor: pointer;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  outline: none;
+  width: 300px;
+  text-align: center;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.exitButton,
+.cancelButton {
+  margin-top: 20px;
+  padding: 10px 20px;
+  width: 120px; /* Increase the width to fit the text */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.exitButton {
+  background-color: #f65246;
+}
+
+.cancelButton {
+  background-color: #fc9898;
+  margin-left: 10px;
+}

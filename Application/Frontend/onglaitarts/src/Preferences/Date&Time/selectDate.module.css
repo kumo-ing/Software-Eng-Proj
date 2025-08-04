@@ -1,0 +1,154 @@
+.container {
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+  background-image: url("../../resources/background.jpg");
+  background-size: auto;
+  background-position: center;
+  background-repeat: repeat;
+}
+
+.content {
+  background-color: #ffffff80;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.header {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.back-button {
+  cursor: pointer;
+  width: 30px; /* Adjust the size as needed */
+  height: 30px; /* Adjust the size as needed */
+  position: absolute;
+  top: 10%;
+  left: 1%;
+}
+
+.calendarContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 800px;
+  margin-bottom: 10px;
+}
+
+.dateSelector {
+  flex: 1;
+  margin-bottom: 20px;
+}
+
+.mealOptions {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  padding-left: 5%;
+  padding-top: 5%;
+  background-color: #ffcccc;
+  border-radius: 10px;
+  max-width: auto;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  font-size: 30px;
+}
+
+.selectedList {
+  width: 100%;
+  max-width: 800px;
+  text-align: left;
+  font-size: 20px;
+}
+
+.selectedList ul {
+  background-color: white;
+  padding: 20px 40px;
+  border: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  height: auto;
+  font-size: 20px;
+}
+
+.selectedList li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0; /* Add padding for better spacing */
+}
+
+.remove-icon {
+  cursor: pointer;
+  margin-left: 10px;
+  width: 20px; /* Adjust the size as needed */
+  height: 20px; /* Adjust the size as needed */
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 800px;
+  padding: 2vh;
+}
+
+.buttonStyle {
+  flex: 1;
+  font-size: 40px;
+  cursor: pointer;
+  background-color: #ff7590;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  margin: 0 3%;
+  width: 20vh;
+  height: 8vh;
+  padding: 15px 0px;
+}
+
+.buttonContainer .buttonStyle:hover {
+  background-color: #ff4c4c !important; /* Change the hover color to #ff4c4c */
+}
+
+/* Responsive design */
+@media (min-width: 768px) {
+  .calendarContainer {
+    flex-direction: row;
+  }
+
+  .dateSelector {
+    margin-bottom: 0;
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .header {
+    font-size: 40px;
+  }
+
+  .buttonContainer .ant-btn {
+    font-size: 30px;
+  }
+
+  .buttonContainer {
+    flex-direction: column;
+  }
+
+  .buttonContainer .ant-btn {
+    margin: 10px 0;
+  }
+}

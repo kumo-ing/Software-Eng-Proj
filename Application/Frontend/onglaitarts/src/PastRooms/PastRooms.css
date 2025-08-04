@@ -1,0 +1,129 @@
+/* Prevent scrolling on the page */
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Disable scrolling */
+    height: 100%; /* Ensure the body and html take up the full height of the viewport */
+}
+
+/* Ensure the main container adjusts to the screen size */
+.past-rooms-page {
+    background-image: url("../resources/background.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh; /* Full height of the viewport */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+/* Adjust the container to fit dynamically */
+.past-rooms-container {
+    background-color: white;
+    padding: 20px; /* Adjust padding for smaller screens */
+    border-radius: 10px;
+    width: 90%; /* Responsive width */
+    max-width: 800px; /* Limit the maximum width */
+    height: auto; /* Allow height to adjust dynamically */
+    min-height: 60vh; /* Minimum height for content */
+    max-height: 90vh; /* Prevent the container from exceeding the viewport height */
+    text-align: center;
+    overflow-y: auto; /* Add scrolling inside the container if content overflows */
+}
+
+/* Ensure the table adjusts dynamically */
+.past-rooms-table {
+    width: 100%; /* Full width of the container */
+    height: auto; /* Adjust height dynamically */
+    border-collapse: collapse;
+    margin-top: 0px;
+    border: 1px solid black;
+    flex-grow: 1;
+}
+
+.past-rooms-table th, .past-rooms-table td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+    font-size: 1em; /* Adjust font size for responsiveness */
+}
+
+.past-rooms-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.past-rooms-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Ensure the parent container is positioned relative */
+.menu-container {
+    position: relative; /* Set the parent container to relative positioning */
+    display: inline-block; /* Ensure the container adjusts to the size of its content */
+}
+
+/* Style the menu button (three vertical dots) */
+.menu-button {
+    background: none;
+    border: none; /* Remove the border */
+    font-size: 1.5em; /* Adjust font size for better visibility */
+    cursor: pointer;
+    padding: 5px;
+    line-height: 1;
+    color: black; /* Ensure the dots are visible */
+}
+
+/* Dropdown menu styling */
+.dropdown-menu {
+    position: absolute; /* Position the dropdown menu relative to the .menu-container */
+    background: white;
+    border: 1px solid #ccc;
+    z-index: 10;
+    font-size: 1em;
+    left: -275%; /* Shift the dropdown menu more to the left */
+    top: 100%; /* Position directly below the button */
+    border-radius: 5px;
+    padding: 5px;
+    width: auto; /* Adjust width dynamically based on content */
+    text-align: left; /* Align text to the left */
+}
+
+/* Style the dropdown menu button */
+.dropdown-menu button {
+    background: none;
+    border: none;
+    width: 100%; /* Full width of the dropdown menu */
+    text-align: left; /* Align text to the left */
+    padding: 4px 8px; /* Reduce padding for a smaller button */
+    cursor: pointer;
+    font-size: 0.9em; /* Smaller font size for a single-line button */
+    white-space: nowrap; /* Prevent the text from wrapping to the next line */
+    overflow: hidden; /* Hide any overflowing text */
+    text-overflow: ellipsis; /* Add ellipsis if the text overflows */
+}
+
+.dropdown-menu button:hover {
+    background-color: #f2f2f2; /* Light gray background on hover */
+}
+
+/* Adjust the back button for responsiveness */
+.back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 50px; /* Adjust size for smaller screens */
+    height: 50px;
+    cursor: pointer;
+}
+
+/* Adjust the title for responsiveness */
+.title {
+    position: absolute;
+    top: 20px;
+    font-size: 3em; /* Adjust font size for smaller screens */
+    font-weight: bold;
+    text-align: center;
+}

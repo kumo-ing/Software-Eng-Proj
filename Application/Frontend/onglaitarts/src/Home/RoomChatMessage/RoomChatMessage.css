@@ -1,0 +1,256 @@
+/* .side-bar {
+  position: absolute;
+  left: 0;
+  width: 15%;
+  height: 93vh;
+  background-color: #ffdede;
+} */
+
+.main-chat {
+  position: absolute;
+  right: 0;
+  width: 85%;
+  height: 93vh;
+  background-color: #ffc6c6;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.top-container {
+  position: absolute;
+  left: 0;
+  width: 15%;
+  height: 25vh;
+  background-color: #ffb5b5;
+}
+
+.sidebar {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  left: 0;
+  bottom: 0;
+  width: 15%;
+  height: 62vh;
+  background-color: #ffdede;
+}
+
+.text-container {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 15%;
+  background-color: #ff8e8e;
+  margin-bottom: 0px;
+}
+
+.text-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-items: center;
+  width: 95%;
+  height: 30%;
+  background-color: #fff; /* White background */
+  border-radius: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+
+.text-message {
+  flex-grow: 1;
+  padding: 10px;
+  font-size: 15px;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #333;
+}
+
+.send-button {
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: #ff8e8e; /* Red send button to match theme */
+  margin-left: 10px;
+}
+
+.text-info {
+  font-size: 1.8rem;
+  margin-bottom: 5vh;
+  margin-left: 0.5vw;
+}
+
+.text-info-pin {
+  font-size: 1.8rem;
+  margin-left: 0.5vw;
+}
+
+.sidebar button {
+  width: 150px;
+  height: 60px;
+  background-color: #ff7590;
+  border: none;
+  border-radius: 15px;
+  font-size: 1.2rem;
+  color: white;
+  cursor: pointer;
+  margin: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.2s ease-in-out;
+}
+
+.sidebar button:hover {
+  background-color: #ff6f82;
+}
+
+.submission-text {
+  font-size: 1.5rem;
+  padding-top: 7vh;
+  text-align: center;
+}
+
+.invite-friend-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #00000080;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.friend-modal {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 400px;
+  max-height: 80vh;
+  overflow-y: auto;
+  position: relative;
+}
+
+.friend-modal h2 {
+  margin-bottom: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.modal-close-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.modal-friend-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-height: 300px;
+  overflow-y: auto;
+  margin-bottom: 20px;
+}
+
+.modal-friend-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  max-height: 50px;
+}
+
+.modal-friend-item:hover {
+  background-color: #f0f0f0;
+}
+
+.modal-friend-profile-pic {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.modal-friend-details {
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+}
+
+.modal-friend-name {
+  font-weight: bold;
+}
+
+.modal-friend-id {
+  color: #666;
+}
+
+.copy-pin-button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  font-size: 20px;
+  color: white;
+  background-color: #ff7590;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.copy-pin-button:hover {
+  background-color: #ff4c4c;
+}
+
+.review-reason-label {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.review-modal .ant-modal-body {
+  padding-top: 0px;
+  font-family: sans-serif;
+}
+
+.pinned-system-msg {
+  background-color: #fff3cd;
+  border: 1px solid #ffeeba;
+  padding: 10px;
+  margin: 10px 20px;
+  border-radius: 6px;
+  font-size: 14px;
+  color: #856404;
+}
+
+.pinned-label {
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.pinned-content {
+  background-color: #f0f4f8;
+  border-left: 4px solid #3c8dbc;
+  padding: 10px 16px;
+  margin: 12px 0;
+  font-size: 14px;
+  line-height: 1.5;
+  white-space: pre-line;
+}
+
